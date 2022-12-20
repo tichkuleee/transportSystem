@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.transport.CustomerSystem" table="Customer">
+        <!--primary key Columns of a Table-->
+        <id name="custId" type="int" column="Customer_ID">
+        </id>
+        <!--Normal Columns of a Table-->
+        <property name="custName" column="cust_name" type="java.lang.String"/>
+        <property name="mob" column="mobile_no" type= "long"/>
+        <property name="email" column="Email" type="java.lang.String"/>
+        <property name="drivingLicense" column="driving_lisence" type="long"/>
+        <property name="durationForRent" column="duration_Of_rent" type="int"/>
+        <property name="rate" column="rate_of_vehicle" type="float"/>
+
+    </class>
+</hibernate-mapping>

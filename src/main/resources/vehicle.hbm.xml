@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.transport.VehicleSystem" table="Vehicle">
+        <!--primary key Columns of a Table-->
+        <id name="vehicleId"  type="java.lang.String" column="Vehicle_ID">
+        </id>
+        <!--Normal Columns of a Table-->
+        <!--property name="vehicleId" column="Vehicle_ID" type="java.lang.String"/-->
+        <property name="typeOfVehicle" column="Vehicle_Type" type="java.lang.String"/>
+        <property name="milageOfVehicle" column="Vehicle_Milage" type= "int"/>
+        <property name="gearType" column="Gear_Type" type="java.lang.String"/>
+        <property name="custId" column="Customer_ID" type="int"/>
+    </class>
+</hibernate-mapping>
